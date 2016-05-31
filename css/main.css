@@ -1,0 +1,59 @@
+body{
+	background: #E9EAED;
+}
+.menu{
+	min-height: 200px;
+	float: left;
+
+}
+.image-select{
+	max-width: 46px;
+	min-height: 34px;
+}
+#ic{
+	font-size: 3em;
+}
+#picture{
+	background: #006CFD;
+}
+#text{
+	background: #AD00FE;
+	padding-left: 3px;
+}
+#upload{
+	background: #00D6FF;
+	padding-left: 3px;
+
+}
+#pencil{
+	background: #05FF57;
+	padding-left: 3px;
+
+}
+#color-pick{
+	background: white;
+	padding-left: 3px;
+
+}
+.play-area{
+	border:1px solid red;
+	float: left;
+	height: 500px;
+	width: 500px;
+
+	background: url("../images/t.png");
+	background-size: contain;
+}
+
+#img{
+	height: 100px;
+	width: 100px;
+	background: url("../images/2.jpg");
+	background-size: contain;
+
+}
+#img-out{
+	float: left;
+	height: 500px;
+	width: 500px;
+}
