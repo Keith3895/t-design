@@ -6,7 +6,7 @@ body{
 	float: left;
 
 }
-.image-select{
+.sub-menu{
 	max-width: 46px;
 	min-height: 34px;
 }
@@ -40,20 +40,15 @@ body{
 	float: left;
 	height: 500px;
 	width: 500px;
-
-	background: url("../images/t.png");
 	background-size: contain;
 }
-
-#img{
-	height: 100px;
-	width: 100px;
-	background: url("../images/2.jpg");
-	background-size: contain;
-
+.pic-select{
+	background: #ccc;
+	max-width: 12%;
+	min-height: 20%;
+	font-size: 1em;
+	left: 3.8em;
+	transition: all 1s ease;
+	position:absolute;
 }
-#img-out{
-	float: left;
-	height: 500px;
-	width: 500px;
-}
+

@@ -1,0 +1,85 @@
+.hid{
+	display: none;
+	max-width: 1%;
+	transition: all 1s ease;
+}
+.color-choice{
+	display: inline-flex;
+	width: 20px;
+	height: 20px;
+    padding: 2px;
+    border: 1px solid grey;
+}
+.c-pick{
+	background: #ccc;
+	max-width: 12%;
+	min-height: 20%;
+	font-size: 1em;
+	left: 3.5em;
+	transition: all 1s ease;
+	position:absolute;
+}
+.red{
+	background: url("../images/tee/red/red_front.png");
+}
+.black{
+	background: url("../images/tee/black/black_front.png");
+}
+.white{
+	background: url("../images/tee/white/white_front.png");
+}
+.green{
+	background: url("../images/tee/green/green_front.png");
+}
+.navy{
+	background: url("../images/tee/navy/navy_front.png");
+}
+#red{
+	background:red;
+	cursor:pointer;
+}
+#black{
+	background:black;
+	cursor:pointer;
+}
+#white{
+	background:white;
+	cursor:pointer;
+}
+#green{
+	background:green;
+	cursor:pointer;
+}
+#navy{
+	background:navy;
+	cursor:pointer;
+}
+.panel {
+	position:relative;
+}
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+	/*right:-16px;*/
+	/*left: 100%;*/
+	border-right: 10px solid #f7f7f7;
+	border-left: 10px solid transparent;
+	top:11px;
+	left:-16px;
+	right:100%;
+	border-right-color:#ddd;
+	position:absolute;
+	width:0;
+	height:0;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	content:" ";
+
+	
+}
+.panel>.panel-heading:after{
+	border-width:7px;
+	margin-top:1px;
+	margin-left:2px;
+}
+.panel>.panel-heading:before{
+	border-width:8px;
+}
