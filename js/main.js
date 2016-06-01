@@ -9,6 +9,9 @@ $(function(){
 	$("#color-pick").click(function(){
 		$(".c-pick").toggleClass('hid');
 	});
+		$("#picture").click(function(){
+		$(".pic-select").toggleClass('hid');
+	});
 	$('#red').click(function(){
 				$(".play-area").removeClass($color);
 				$color="red";

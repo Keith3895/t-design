@@ -42,13 +42,4 @@ body{
 	width: 500px;
 	background-size: contain;
 }
-.pic-select{
-	background: #ccc;
-	max-width: 12%;
-	min-height: 20%;
-	font-size: 1em;
-	left: 3.8em;
-	transition: all 1s ease;
-	position:absolute;
-}
 
