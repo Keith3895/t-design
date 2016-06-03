@@ -1,4 +1,4 @@
-var $type="tee",$color="black",$y_pos="front",$nos_icons=0,$nos_text=0,$custom_img=0;
+var $type="tee",$color="black",$y_pos="front",$nos_icons=0,$nos_text=0,$custom_img=0,$custom_img_val=0;
 $(function(){
 	$(".play-area").addClass($color);
 	$(".dr").draggable({
@@ -37,7 +37,10 @@ $(function(){
 				$color="navy";
 				$(".play-area").addClass($color);
 	});	
-
+	for(var i=1;i<52;i++){
+		document.querySelector(".custom-img-container").innerHTML+="<div class=\"custom-img custom-img"+i+"\"></div>";
+		$(".custom-img"+i).css({'background':'url(\"../t-design/images/t-images/'+i+'.png\")','background-size':'contain'});
+	}
 	
 
 	
