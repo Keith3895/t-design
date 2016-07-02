@@ -1,11 +1,6 @@
-var $type="tee",$color="black",$y_pos="front",$nos_icons=0,$nos_text=0,$custom_img=0,$custom_img_val=0;
+var $type="tee",$color="black",$y_pos="front",$nos_icons=0,$nos_text=0,$custom_img=0,custom_img_val=0;no_custom_img=0;
 $(function(){
 	$(".play-area").addClass($color);
-	$(".dr").draggable({
-		cursor: "move",
-    	containment: [20,20,400,500],
-	});
-	$(".test").resizable();
 	$("#color-pick").click(function(){
 		$(".c-pick").toggleClass('hid');
 	});
@@ -41,10 +36,29 @@ $(function(){
 		document.querySelector(".custom-img-container").innerHTML+="<div class=\"custom-img custom-img"+i+"\"></div>";
 		$(".custom-img"+i).css({'background':'url(\"../t-design/images/t-images/'+i+'.png\")','background-size':'contain'});
 	}
+	$(".custom-img").click(function(){
+		$(".pic-select").addClass('hid');
+		var str2=(($(this).attr('class').split(/\s+/))[1]).split("g");
+		custom_img_val=Number(str2[1]);
+		document.querySelector(".play-area").innerHTML+="<div id=\"selected-image"+no_custom_img+"\" style=\"background:none\"> <div class=\"image-back"+no_custom_img+"\" style=\"border:.5px red solid;width:50px;height:50px; \"> </div> </div>";
+		$(".image-back"+no_custom_img).css({'background':'url(\"../t-design/images/t-images/'+custom_img_val+'.png\")','background-size':'contain','background-repeat':'no-repeat'});
+		no_custom_img++;
+		for(i=0;i<=no_custom_img;i++){
+			$("#selected-image"+i).draggable({
+				cursor: "move",
+		    	containment: [20,20,400,500],
+		    	opacity: 0.35
+			});
+			$(".image-back"+i).resizable({
+		 		maxHeight: 300,
+		 		maxWidth:300,
+		 		minHeight:50,
+		 		minWidth:50,
+		 		// helper: "resizable-helper"
+			});
+		}
+	});
 	
-
-	
-
 });
 
 // $(function() { 
