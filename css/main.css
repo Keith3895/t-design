@@ -47,3 +47,6 @@ body{
 	width: 50px;
 	height: 50px;
 }
+.new_text:hover{
+	border:1px red solid;
+}
