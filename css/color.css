@@ -83,8 +83,6 @@
 	position:relative;
 }
 .panel>.panel-heading:after,.panel>.panel-heading:before{
-	/*right:-16px;*/
-	/*left: 100%;*/
 	border-right: 10px solid #f7f7f7;
 	border-left: 10px solid transparent;
 	top:11px;
